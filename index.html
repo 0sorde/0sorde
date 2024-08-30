@@ -1,17 +1,98 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-   <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página de Links</title>
+    <script src="https://kit.fontawesome.com/3148b80673.js" crossorigin="anonymous"></script>
+    <style>
+        /* Reset básico de margem e preenchimento */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-   <style>
-      body{
-         margin: 0;
-         padding: 0;
-      background-color: #purple;
-      }
-   </style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        header {
+            margin-bottom: 1.5rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        header p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0.5rem 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centraliza o texto horizontalmente */
+            width: 75%;
+            margin: 0 auto; /* Centraliza os links horizontalmente */
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #0056b3;
+        }
+
+        .imgperfil {
+            border-radius: 100%;
+            width: 100px;
+            box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+    </style>
 </head>
-  <body>
-    <h1 class='titulo'>0sorde</h1>
-  </body>
-  
+<body>
+    <div class="container">
+        <header>
+            <img class="imgperfil" src="https://d2tfco5ldvlr4r.cloudfront.net/profile/210x210/1724951414690-0sorde.jpg" alt="Foto de Perfil">
+            <h1>0sorde</h1>
+            <p>Bem-vindo ao meu Perfil!</p>
+        </header>
+        <nav>
+            <ul>
+                <li><div class="juntar"></i><a href="https://www.seusite.com" target="_blank">Preços</a></div></li>
+                <li><a href="https://www.instagram.com/seuperfil" target="_blank">Portfólio</a></li>
+                <li><a href="https://www.twitter.com/seuperfil" target="_blank">Sobre</a></li>
+                <li><a href="https://www.linkedin.com/in/seuperfil" target="_blank">FeedBack</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
 </html>
